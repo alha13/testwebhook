@@ -1,6 +1,6 @@
 <?php
 	//constantes
-	define("HOST","github.com");
+	define("HOST","184.154.39.46");
 	define("DB","pekrzxic_mogo");
 	define("USER","pekrzxic_mogo");
 	define("PASS","monmogo@1");
