@@ -28,7 +28,7 @@ if($method == 'POST'){
 
 			break;
 
-		case $aut_resultat['id']:
+		case $aut_resultat['prenom']:
 			$speech = "Bye, good night";
 			break;
 
