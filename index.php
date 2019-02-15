@@ -28,8 +28,8 @@ if($method == 'POST'){
 
 			break;
 
-		case $aut_resultat['prenom']:
-			$speech = "Bye, good night";
+		case $aut_resultat['nom']:
+			$speech = $aut_resultat['prenom'];
 			break;
 
 		case 'anything':
