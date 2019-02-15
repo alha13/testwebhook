@@ -10,7 +10,7 @@ if($method == 'POST'){
 	$text = $json->result->parameters->text;
 
 	switch ($text) {
-		case '#hilala':
+		case '11111111':
 			$speech = "Hi, Nice to meet you";
 			break;
 
@@ -23,7 +23,7 @@ if($method == 'POST'){
 			break;
 		
 		default:
-			$speech = "Désolé, je n'ai pas compris ça. S'il vous plaît demandez-moi quelque chose d'autre.";
+			$speech = " 11 Désolé, je n'ai pas compris ça. S'il vous plaît demandez-moi quelque chose d'autre.";
 			break;
 	}
 
