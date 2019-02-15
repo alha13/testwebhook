@@ -10,10 +10,10 @@ $sql1 = "SELECT * FROM `azo` WHERE `id` = :id";
 				while ($aut_resultat = $query1->fetch()) {
 	?>
 
-					<?= $aut_resultat['id'] ?>
+					<!-- <?= $aut_resultat['id'] ?>
 					<?= $aut_resultat['nom'] ?>
 					<?= $aut_resultat['prenom'] ?>
-					<?= $aut_resultat['age'] ?>
+					<?= $aut_resultat['age'] ?> -->
 
 <?php	} ?>
 <?php
