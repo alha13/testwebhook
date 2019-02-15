@@ -62,7 +62,7 @@ if($method == 'POST'){
 }
 else
 {
-	echo "Acees a ghit mais pas au case AZO Z";
+	echo "Acees a ghit mais pas au case";
 }
 
 ?>
