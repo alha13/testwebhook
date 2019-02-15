@@ -11,8 +11,8 @@ if($method == 'POST'){
 
 	switch ($text) {
 		case '11111111':
-			$speech = "Hi, Nice to meet you";
-			 $speech = "https://www.numelion.com/wp-content/uploads/2013/09/comment-utiliser-json-dans-php.jpg \n Ouattara";
+			// $speech = "Hi, Nice to meet you";
+			 $speech = "Liste des *pharmacies de garde à Bouaflé*.\n_____________________________________ https://www.numelion.com/wp-content/uploads/2013/09/comment-utiliser-json-dans-php.jpg \n Ouattara";
 
 			break;
 
