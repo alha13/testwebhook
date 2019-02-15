@@ -16,15 +16,7 @@ $sql1 = "SELECT * FROM `azo` WHERE `id` = :id";
 					<?= $aut_resultat['age'] ?>
 
 <?php	} ?>
-
-
-
-
-
-
 <?php
-
-
 $method = $_SERVER['REQUEST_METHOD'];
 
 // Process only when method is POST
