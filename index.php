@@ -10,7 +10,7 @@ if($method == 'POST'){
 	$text = $json->result->parameters->text;
 
 	switch ($text) {
-		case '11111111':
+		case 'aqs':
 			// $speech = "Hi, Nice to meet you";
 			 $speech = "Liste des *pharmacies de garde à Bouaflé*.\n_____________________________________ \n https://www.numelion.com/wp-content/uploads/2013/09/comment-utiliser-json-dans-php.jpg \n Ouattara";
 
