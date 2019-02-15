@@ -35,7 +35,7 @@ if($method == 'POST'){
 }
 else
 {
-	echo "Method not allowed";
+	echo "Acees a ghit mais pas au case";
 }
 
 ?>
