@@ -1,9 +1,9 @@
 <?php
 	//constantes
 	define("HOST","localhost");
-	define("DB","u431225321_autos");
-	define("USER","u431225321_autos");
-	define("PASS","H2aPgC6d");
+	define("DB","pekrzxic_mogo");
+	define("USER","pekrzxic_mogo");
+	define("PASS","monmogo@1");
 
 
 	 try{
@@ -17,22 +17,3 @@
 	};
 
 ?>
-
-<?php
-
-$sql1 = "SELECT * FROM `azo` WHERE `id` = :id";
-
-				$query1 = $bd->prepare($sql1);
-				$query1->execute(array(
-					'id' => 1,
-				));
-				while ($aut_resultat = $query1->fetch()) {
-					<?= $aut_resultat['id'] ?>
-					<?= $aut_resultat['nom'] ?>
-					<?= $aut_resultat['prenom'] ?>
-					<?= $aut_resultat['age'] ?>
-				}
-
-
-
- ?>
