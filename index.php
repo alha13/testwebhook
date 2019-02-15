@@ -12,7 +12,7 @@ if($method == 'POST'){
 	switch ($text) {
 		case '11111111':
 			$speech = "Hi, Nice to meet you";
-			// $speech = ;
+			 $speech = "https://www.youtube.com/watch?v=RjHQOzC9eyU";
 
 			break;
 
