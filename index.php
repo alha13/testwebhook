@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $method = $_SERVER['REQUEST_METHOD'];
 
@@ -23,7 +23,7 @@ if($method == 'POST'){
 		case 'anything':
 			$speech = "Yes, you can type anything here.";
 			break;
-		
+
 		default:
 			$speech = " 11 Désolé, je n'ai pas compris ça. S'il vous plaît demandez-moi quelque chose d'autre.";
 			break;
@@ -37,7 +37,7 @@ if($method == 'POST'){
 }
 else
 {
-	echo "Acees a ghit mais pas au case";
+	echo "Acees a ghit mais pas au case AZO";
 }
 
 ?>
