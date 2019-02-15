@@ -7,8 +7,10 @@ $sql1 = "SELECT * FROM `azo` WHERE `id` = :id";
 				$query1->execute(array(
 					'id' => 1,
 				));
-		$aut_resultat = $query1->fetch());
+		$aut_resultat = $query1->fetch();
+		//echo $aut_resultat['id'];
 	?>
+
 <?php
 $method = $_SERVER['REQUEST_METHOD'];
 
@@ -26,7 +28,7 @@ if($method == 'POST'){
 
 			break;
 
-		case $aut_resultat['prenom']:
+		case $aut_resultat['id']:
 			$speech = "Bye, good night";
 			break;
 
