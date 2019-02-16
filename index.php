@@ -34,7 +34,7 @@ if($method == 'POST'){
 			break;
 
 		case $aut_resultat['nom']:
-			$speech = $aut_resultat['prenom']. "coûte . " $aut_resultat['age'];
+			$speech = $aut_resultat['prenom']." coûte ".$aut_resultat['age'];
 			break;
 
 		case 'anything':
