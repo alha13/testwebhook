@@ -15,11 +15,12 @@ if($method == 'POST'){
 	$text = $json->result->parameters->text;
 
 	//echo $text;
+	//$GET['enter'] = 'AZO';
 	$sql1 = "SELECT * FROM `azo` WHERE `nom` = :nom";
 
 					$query1 = $bd->prepare($sql1);
 					$query1->execute(array(
-						'nom' => $text,
+						'nom' => AZO,
 					));
 			$aut_resultat = $query1->fetch();
 
