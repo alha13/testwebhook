@@ -24,7 +24,7 @@ if($method == 'POST'){
 					));
 			$aut_resultat = $query1->fetch();
 
-echo $aut_resultat['prenom'];
+// echo $aut_resultat['prenom'];
 
 	switch ($text) {
 		case 'aqs':
