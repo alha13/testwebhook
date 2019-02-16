@@ -20,7 +20,7 @@ if($method == 'POST'){
 
 					$query1 = $bd->prepare($sql1);
 					$query1->execute(array(
-						'nom' => $text,
+						'nom%' => $text,
 					));
 
 
