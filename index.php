@@ -34,9 +34,10 @@ if($method == 'POST'){
 			break;
 
 		case $text:
-		foreach (	$aut_resultat = $query1->fetch()) {
-			$speech = $aut_resultat['prenom']." coûte ".$aut_resultat['age'];
+		while ($aut_resultat = $query1->fetch() ) {
+			$msg = $aut_resultat['prenom']." coûte ".$aut_resultat['age'];
 		}
+		$speech = $msg;
 			break;
 
 		case 'anything':
