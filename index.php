@@ -1,13 +1,6 @@
 <?php
 include('database.php');
 
-$sql1 = "SELECT * FROM `azo` WHERE `id` = :id";
-
-				$query1 = $bd->prepare($sql1);
-				$query1->execute(array(
-					'id' => 1,
-				));
-		$aut_resultat = $query1->fetch();
 		//echo $aut_resultat['id'];
 	?>
 
@@ -20,6 +13,17 @@ if($method == 'POST'){
 	$json = json_decode($requestBody);
 
 	$text = $json->result->parameters->text;
+
+
+	$sql1 = "SELECT * FROM `azo` WHERE `nom` = :nom";
+
+					$query1 = $bd->prepare($sql1);
+					$query1->execute(array(
+						'id' => $text,
+					));
+			$aut_resultat = $query1->fetch();
+
+
 
 	switch ($text) {
 		case 'aqs':
