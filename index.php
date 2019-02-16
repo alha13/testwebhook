@@ -14,7 +14,7 @@ if($method == 'POST'){
 
 	$text = $json->result->parameters->text;
 
-	echo $text;
+	//echo $text;
 	$sql1 = "SELECT * FROM `azo` WHERE `nom` = :nom";
 
 					$query1 = $bd->prepare($sql1);
@@ -23,7 +23,7 @@ if($method == 'POST'){
 					));
 			$aut_resultat = $query1->fetch();
 
-
+echo $aut_resultat['prenom'];
 
 	switch ($text) {
 		case 'aqs':
