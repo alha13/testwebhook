@@ -16,13 +16,13 @@ if($method == 'POST'){
 
 	//echo $text;
 	//$GET['enter'] = 'AZO';
-	$sql1 = "SELECT * FROM `azo` WHERE `nom` LIKE ':nom%' LIMIT 50";
+	$sql1 = "SELECT * FROM `azo` WHERE `nom` = :nom";
 
 					$query1 = $bd->prepare($sql1);
 					$query1->execute(array(
 						'nom' => $text,
 					));
-
+			$aut_resultat = $query1->fetch();
 
 // echo $aut_resultat['prenom'];
 
@@ -33,10 +33,8 @@ if($method == 'POST'){
 
 			break;
 
-		case $text:
-		foreach (	$aut_resultat = $query1->fetch()) {
+		case $aut_resultat['nom']:
 			$speech = $aut_resultat['prenom']." coûte ".$aut_resultat['age'];
-		}
 			break;
 
 		case 'anything':
