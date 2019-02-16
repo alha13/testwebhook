@@ -16,7 +16,7 @@ if($method == 'POST'){
 
 	//echo $text;
 	//$GET['enter'] = 'AZO';
-	$sql1 = "SELECT * FROM `azo` WHERE `nom` LIKE :nom LIMIT 50";
+	$sql1 = "SELECT * FROM `azo` WHERE `nom` LIKE :nom% LIMIT 50";
 
 					$query1 = $bd->prepare($sql1);
 					$query1->execute(array(
@@ -35,7 +35,7 @@ if($method == 'POST'){
 
 		case $text:
 		while ($aut_resultat = $query1->fetch() ) {
-			$msg = $msg + $aut_resultat['prenom']." coûte ".$aut_resultat['age'];
+			$msg = $aut_resultat['prenom']." coûte ".$aut_resultat['age'];
 		}
 		$speech = $msg;
 			break;
