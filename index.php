@@ -24,7 +24,7 @@ if($method == 'POST'){
 					));
 
 
-// echo $aut_resultat['prenom'];
+ echo $aut_resultat['prenom'];
 
 	switch ($text) {
 		case 'aqs':
