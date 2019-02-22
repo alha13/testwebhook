@@ -62,7 +62,7 @@ if($method == 'POST'){
 	  "title": "card title",
 	  "subtitle": "card text",
 	  "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
-	}'
+	}';
 	//$response->source = $source;
 
 	$response->speech = $speech;
