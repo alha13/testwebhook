@@ -32,6 +32,7 @@ if($method == 'POST'){
 			 $speech = "Liste des *pharmacies de garde à Bouaflé*.\n_____________________________________ \n";
 			 $source = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
 			 $imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
+			 $data = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
 			break;
 
 		case $text:
@@ -62,11 +63,14 @@ if($method == 'POST'){
 	//   "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
 	// }
 
-	$response->source = $source;
-	$response->imageUrl = $imageUrl;
+	//$response->source = $source;
 
 	$response->speech = $speech;
 	$response->displayText = $speech;
+
+	$response->imageUrl = $data;
+	$response->imageUrl = $imageUrl;
+
 	$response->source = "webhook";
 	echo json_encode($response);
 }
