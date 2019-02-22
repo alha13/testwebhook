@@ -29,8 +29,9 @@ if($method == 'POST'){
 	switch ($text) {
 		case 'aqs':
 			// $speech = "Hi, Nice to meet you";
-			 $speech = "Liste des *pharmacies de garde à Bouaflé*.\n_____________________________________ \n https://www.numelion.com/wp-content/uploads/2013/09/comment-utiliser-json-dans-php.jpg \n Ouattara";
-
+			 $speech = "Liste des *pharmacies de garde à Bouaflé*.\n_____________________________________ \n";
+			 $source = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
+			 $imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
 			break;
 
 		case $text:
@@ -61,8 +62,8 @@ if($method == 'POST'){
 	//   "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
 	// }
 
-	$response->source = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
-	$response->imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
+	$response->source = $source;
+	$response->imageUrl = $imageUrl;
 
 	$response->speech = $speech;
 	$response->displayText = $speech;
