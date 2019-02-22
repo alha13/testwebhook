@@ -66,7 +66,7 @@ if($method == 'POST'){
 	$response->messages->subtitle = "sous titre";
 	$response->messages->imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
 
-	$response->source = "webhook";
+	$response->source = "Mon_Môgô";
 	echo json_encode($response);
 }
 else
