@@ -59,8 +59,6 @@ if($method == 'POST'){
 	//echo $body;
 	$response->speech = $speech;
 	$response->displayText = $speech;
-
-	//$response->messages = $body;
 	$response->messages->type = "1";
 	$response->messages->title = "TITRE";
 	$response->messages->subtitle = "sous titre";
