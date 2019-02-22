@@ -67,7 +67,7 @@ if($method == 'POST'){
 	$response->displayText = $speech;
 
 	//$response->messages = $body;
-	$response->messages->imageUrl = "a";
+	$response->messages->imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
 
 	$response->source = "webhook";
 	echo json_encode($response);
