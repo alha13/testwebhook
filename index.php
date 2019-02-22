@@ -55,7 +55,7 @@ if($method == 'POST'){
 	// "speech": "this text is spoken out loud if the platform supports voice interactions",
 	// "displayText": "this text is displayed visually",
 
-	$body = '"messages": {
+	$body = '{
 	  "type": 1,
 	  "title": "card title",
 	  "subtitle": "card text",
