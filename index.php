@@ -62,11 +62,11 @@ if($method == 'POST'){
 	  "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
 	}';
 	//$response->source = $source;
-	echo $body;
+	//echo $body;
 	$response->speech = $speech;
 	$response->displayText = $speech;
 
-	$response->messages = '$body';
+	$response->messages = $body;
 
 	$response->source = "webhook";
 	echo json_encode($response);
