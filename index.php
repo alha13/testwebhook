@@ -67,6 +67,7 @@ if($method == 'POST'){
 	$response->displayText = $speech;
 
 	$response->messages = $body;
+	$response->messages->type = 'a';
 
 	$response->source = "webhook";
 	echo json_encode($response);
