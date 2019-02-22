@@ -51,15 +51,15 @@ if($method == 'POST'){
 
 	$response = new \stdClass();
 
-	{
-	"speech": "this text is spoken out loud if the platform supports voice interactions",
-	"displayText": "this text is displayed visually",
-	"messages": {
-	  "type": 1,
-	  "title": "card title",
-	  "subtitle": "card text",
-	  "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
-	}
+	// {
+	// "speech": "this text is spoken out loud if the platform supports voice interactions",
+	// "displayText": "this text is displayed visually",
+	// "messages": {
+	//   "type": 1,
+	//   "title": "card title",
+	//   "subtitle": "card text",
+	//   "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
+	// }
 
 	$response->source = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
 	$response->imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
