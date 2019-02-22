@@ -30,9 +30,7 @@ if($method == 'POST'){
 		case 'aqs':
 			// $speech = "Hi, Nice to meet you";
 			 $speech = "Liste des *pharmacies de garde à Bouaflé*.\n_____________________________________ \n";
-			 $source = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
-			 $imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
-			 $data = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
+			 //$imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
 			break;
 
 		case $text:
@@ -64,11 +62,11 @@ if($method == 'POST'){
 	  "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
 	}';
 	//$response->source = $source;
-
+	echo $body;
 	$response->speech = $speech;
 	$response->displayText = $speech;
 
-	$response->messages = $body;
+	$response->messages = '$body';
 
 	$response->source = "webhook";
 	echo json_encode($response);
