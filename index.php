@@ -35,7 +35,7 @@ if($method == 'POST'){
 
 		case $text:
 		while ($aut_resultat = $query1->fetch() ) {
-			$msg = $aut_resultat['prenom']." coûte ".$aut_resultat['age'];
+			$msg = "*".$aut_resultat['prenom']." -------> ".$aut_resultat['age']."*";
 		}
 		$speech = $msg;
 			break;
