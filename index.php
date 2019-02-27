@@ -43,7 +43,7 @@ if($method == 'POST'){
 		case $text:
 		$msg = "";
 		while ($aut_resultat = $query1->fetch() ) {
-			$msg1 = "*".$aut_resultat['denomination']." -------> ".$aut_resultat['prix']."f CFA*\n\n";
+			$msg1 = "_".$aut_resultat['denomination']."_ -------> _".$aut_resultat['prix']."f CFA_\n\n";
 			$msg = $msg.$msg1;
 		}
 		$speech = $msg;
