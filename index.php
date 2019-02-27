@@ -33,13 +33,6 @@ if($method == 'POST'){
 
 	switch ($text) {
 
-
-		case 'aqs':
-			// $speech = "Hi, Nice to meet you";
-			 $speech = "Liste des *pharmacies de garde à Bouaflé*.\n_____________________________________ \n";
-			 //$imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
-			break;
-
 		case $text:
 		$msg = "";
 		while ($aut_resultat = $query1->fetch() ) {
@@ -49,12 +42,14 @@ if($method == 'POST'){
 		$speech = $msg;
 			break;
 
+
 		case 'anything':
 			$speech = "Yes, you can type anything here.";
 			break;
 
+
 		default:
-			$speech = " 11 Désolé, je n'ai pas compris ça. S'il vous plaît demandez-moi quelque chose d'autre.";
+			$speech = "Désolé, je n'ai pas compris ça. S'il vous plaît demandez-moi quelque chose d'autre.";
 			break;
 
 
