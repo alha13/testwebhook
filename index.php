@@ -32,6 +32,8 @@ if($method == 'POST'){
 // echo $aut_resultat['prenom'];
 
 	switch ($text) {
+
+
 		case 'aqs':
 			// $speech = "Hi, Nice to meet you";
 			 $speech = "Liste des *pharmacies de garde à Bouaflé*.\n_____________________________________ \n";
@@ -41,7 +43,7 @@ if($method == 'POST'){
 		case $text:
 		$msg = "";
 		while ($aut_resultat = $query1->fetch() ) {
-			$msg1 = "*".$aut_resultat['prenom']." -------> ".$aut_resultat['age']."f CFA*\n";
+			$msg1 = "*".$aut_resultat['denomination']." -------> ".$aut_resultat['prix']."f CFA*\n";
 			$msg = $msg.$msg1;
 		}
 		$speech = $msg;
@@ -54,6 +56,8 @@ if($method == 'POST'){
 		default:
 			$speech = " 11 Désolé, je n'ai pas compris ça. S'il vous plaît demandez-moi quelque chose d'autre.";
 			break;
+
+
 	}
 
 	$response = new \stdClass();
