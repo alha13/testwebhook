@@ -16,13 +16,17 @@ if($method == 'POST'){
 
 	//echo $text;
 	//$GET['enter'] = 'AZO';
-	$sql1 = "SELECT * FROM `azo` WHERE `nom` LIKE :nom LIMIT 50";
+	// $sql1 = "SELECT * FROM `azo` WHERE `nom` LIKE :nom LIMIT 50";
+	//
+	// 				$query1 = $bd->prepare($sql1);
+	// 				$query1->execute(array(
+	// 					'nom' => $text,
+	// 				));
 
-					$query1 = $bd->prepare($sql1);
-					$query1->execute(array(
-						'nom' => $text,
-					));
+					$sql1 = "SELECT * FROM `azo` WHERE `nom` LIKE ? LIMIT 50";
 
+									$query1 = $bd->prepare($sql1);
+									$query1->execute(array( $text	));
 
 // echo $aut_resultat['prenom'];
 
