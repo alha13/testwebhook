@@ -59,10 +59,10 @@ if($method == 'POST'){
 	//echo $body;
 	$response->speech = $speech;
 	$response->displayText = $speech;
-	$response->messages->type = "1";
-	$response->messages->title = "TITRE";
-	$response->messages->subtitle = "sous titre";
-	$response->messages->imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
+	// $response->messages->type = "1";
+	// $response->messages->title = "TITRE";
+	// $response->messages->subtitle = "sous titre";
+	// $response->messages->imageUrl = "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png";
 
 	$response->source = "Mon_Môgô";
 	echo json_encode($response);
