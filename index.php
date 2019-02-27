@@ -39,9 +39,10 @@ if($method == 'POST'){
 			break;
 
 		case $text:
+		$msg = "";
 		while ($aut_resultat = $query1->fetch() ) {
-			$msg = "*".$aut_resultat['prenom']." -------> ".$aut_resultat['age']."f CFA*\n";
-			$msg = $msg."".$msg;
+			$msg1 = "*".$aut_resultat['prenom']." -------> ".$aut_resultat['age']."f CFA*\n";
+			$msg = $msg+$msg1;
 		}
 		$speech = $msg;
 			break;
