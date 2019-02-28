@@ -36,7 +36,7 @@ $sql1 = "SELECT * FROM `Prix_medicamens` WHERE `denomination` LIKE :nom LIMIT 50
 			$msg = $msg.$msg1;
 		}
 		$speech = $msg;
-		if ($msg=""){
+		if ($msg==""){
 			$speech = "Aucun médicament correspondant trouvé ! Merci de revoir l'ortographe";
 		}
 			break;
