@@ -53,6 +53,7 @@ $sql1 = "SELECT * FROM `Prix_medicamens` WHERE `denomination` LIKE :nom LIMIT 50
 
 
 	//debut recupration meteo
+	if(!empty($cle)){
 	switch ($cle) {
 
 			case 'azo':
@@ -64,6 +65,7 @@ $sql1 = "SELECT * FROM `Prix_medicamens` WHERE `denomination` LIKE :nom LIMIT 50
 			$speech = "Désolé, je n'ai pas compris ça. S'il vous plaît demandez-moi quelque chose d'autre.";
 			break;
 	}
+}
 	//fin recupration meteo
 
 
