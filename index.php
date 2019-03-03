@@ -1,9 +1,6 @@
 <?php
 include('database.php');
-
-
 	?>
-
 <?php
 $method = $_SERVER['REQUEST_METHOD'];
 
@@ -12,9 +9,23 @@ if($method == 'POST'){
 	$requestBody = file_get_contents('php://input');
 	$json = json_decode($requestBody);
 
+
+
+
+
+
+
 //recuperation des variable recu
 	$text = $json->result->parameters->text;
 	$cle = $json->result->parameters->cle;
+
+
+
+
+
+
+
+
 
 
 //mise en execution des requettes pour la recuperation de donnees BD
@@ -55,6 +66,16 @@ $sql1 = "SELECT * FROM `Prix_medicamens` WHERE `denomination` LIKE :nom LIMIT 50
 
 
 
+
+
+
+
+
+
+
+
+
+
 	//debut recupration meteo
 	if(!empty($cle)){
 	switch ($cle) {
@@ -70,6 +91,14 @@ $sql1 = "SELECT * FROM `Prix_medicamens` WHERE `denomination` LIKE :nom LIMIT 50
 	}
 }
 	//fin recupration meteo
+
+
+
+
+
+
+
+
 
 
 	$response = new \stdClass();
