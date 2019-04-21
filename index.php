@@ -10,22 +10,9 @@ if($method == 'POST'){
 	$json = json_decode($requestBody);
 
 
-
-
-
-
-
 //recuperation des variable recu
 	$text = $json->result->parameters->text;
 	$cle = $json->result->parameters->cle;
-
-
-
-
-
-
-
-
 
 
 //mise en execution des requettes pour la recuperation de donnees BD
@@ -42,12 +29,15 @@ $sql1 = "SELECT * FROM `Prix_medicamens` WHERE `denomination` LIKE :nom LIMIT 50
 
 		case $text:
 		$msg = "";
-		while ($aut_resultat = $query1->fetch() ) {
+		while ($aut_resultat = $query1->fetch() )
+		{
 			$msg1 = "_".$aut_resultat['denomination']."_ ——> *".$aut_resultat['prix']."f CFA*\n\n";
 			$msg = $msg.$msg1;
 		}
+
 		$speech = $msg;
-		if ($msg==""){
+		if ($msg=="")
+		{
 			$speech = "Aucun médicament correspondant trouvé ! Merci de revoir l'ortographe";
 		}
 			break;
